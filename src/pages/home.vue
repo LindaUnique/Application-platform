@@ -1,6 +1,7 @@
 <template>
-    <div>
-        <h1>login page</h1>
+    <div class="root">
+        <h1 id="title">login page</h1>
+        <el-button type="primary" icon="el-icon-edit"></el-button>
         <router-link to="/content">{{announcement}}</router-link>
     </div>
 </template>
@@ -16,6 +17,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
+<style lang="stylus">
+.root #title
+    color: #ccc
 </style>
